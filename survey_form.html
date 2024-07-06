@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+      
+       body{
+	   background-color:#b2e4d1;
+	   text-align:center;
+	   }
+	   form{
+	   background-color:#f3f4f5;
+	   
+	   max-width:600px;
+	   margin:50px auto ;
+	   padding:40px 20px;
+	   box-shadow:2px 5px 10px rgba(0,0,0,0.5);
+
+	   }
+	   .form-control{
+	   
+	   text-align:left;
+	   margin-bottom:25px;
+	   
+	   }
+	   .form-control label{
+	   display:block;
+	   margin-bottom:10px;
+	   }
+	   .form-control input,
+	   .form-control select,
+	   .form-control textarea {
+	   border:1px solid #777;
+	   border-radius:2px;
+	   font-family:inherit;
+	   padding:10px;
+	   display:block;
+	   width:95%;
+	  
+	   }
+	   .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: 20px;
+		}
+		button {
+            background-color: yellow;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+		}
+	   
+       
+    </style>
+ </head>
+ <body>
+    <h1>Survey Form</h1>
+    <form id="form">
+	  <div class="form-control">
+        <label for="name">Name</label>
+        <input type="text" name="name" placeholder="Enter your name"><br>
+	  </div>
+	  <div class="form-control">
+        <label for="mailid">Email</label>
+        <input type="text" name="mail" placeholder="Enter your mailid"><br>
+	  </div>
+      <div class="form-control">
+        <label for="age">Age</label>
+        <input type="number" name="age"><br>
+	  </div>
+	  <div class="form-control">
+        <label for="describe">Which option best describes you?</label>
+        <select>
+            <option value="student">Student</option>
+            <option value="intern">intern</option>
+            <option value="profissional">profissional</option>
+        </select><br>
+		</div>
+	  <div class="form-control">
+        <label>would you recommend this application to your friend?<br>
+        </label>
+		<label>
+        <input type="radio" name="recommend" value="yes">yes<br>
+		</label>
+		<label>
+        <input type="radio" name="recommend" value="No">No<br>
+		</label>
+		<label>
+        <input type="radio" name="recommend" value="Maybe">Maybe<br>
+		</label>
+	  </div>
+	  <div class="form-control">
+        <label>
+            Languages Known
+        </label><br>
+		<label>
+        <input type="checkbox" name="c">C<br>
+		</label>
+		<label>
+        <input type="checkbox" name="c++">C++<br>
+		</label>
+		<label>
+        <input type="checkbox" name="c#">C#<br>
+		</label>
+		<label>
+        <input type="checkbox" name="Java">Java<br>
+		</label>
+		<label>
+        <input type="checkbox" name="Python">Python<br>
+		</label>
+		<label>
+        <input type="checkbox" name="JavaScript">JavaScript<br>
+		</label>
+		<label>
+        <input type="checkbox" name="React">React<br>
+		</label>
+		<label>
+        <input type="checkbox" name="Spring">Spring<br>
+		</label>
+		<label>
+        <input type="checkbox" name="Django">Django<br>
+		</label>
+		<label>
+        <input type="checkbox" name="Angular">Angular<br>
+		</label>
+	   </div>
+	   <div class="form-control">
+        <label>Any comments or suggestions</label><br>
+        <textarea name="comment" placeholder="Enter your comment"></textarea><br>
+		
+       
+		</div>
+		
+		
+		
+    </form>
+	
+</body>
+</html>
